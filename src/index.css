@@ -1,0 +1,148 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+/* --- Variabel Tema Gelap (Default) --- */
+:root, body[data-theme='dark'] {
+  --color-bg: #0A0A0A;
+  --color-text: #EAEAEA;
+  --color-primary: #4DFFFF; /* Cyber Blue */
+  --color-secondary-text: #888888;
+  --color-glass-bg: rgba(255, 255, 255, 0.05);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --color-card-bg: #1a1a1a;
+  --color-heading-shadow: 0 0 8px rgba(77, 255, 255, 0.4);
+}
+
+/* --- Variabel Tema Terang --- */
+body[data-theme='light'] {
+  --color-bg: #F4F4F4;
+  --color-text: #333333;
+  --color-primary: #007BFF; /* Biru standar */
+  --color-secondary-text: #555555;
+  --color-glass-bg: rgba(255, 255, 255, 0.8);
+  --color-glass-border: rgba(0, 0, 0, 0.1);
+  --color-card-bg: #FFFFFF;
+  --color-heading-shadow: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transisi halus */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 700;
+  color: var(--color-primary);
+    text-shadow: var(--color-heading-shadow);
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+section {
+  padding: 6rem 0;
+  border-bottom: 1px solid var(--color-glass-border);
+  position: relative;
+}
+
+.cta-button {
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+/* Glassmorphism Style */
+.glass-card {
+  background: var(--color-glass-bg);
+  border: 1px solid var(--color-glass-border);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  filter: brightness(1.2);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}

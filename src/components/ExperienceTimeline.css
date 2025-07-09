@@ -1,0 +1,74 @@
+/* src/components/ExperienceTimeline.css */
+
+.timeline-container {
+    position: relative;
+    /* Membuat garis vertikal di tengah */
+    border-left: 2px solid var(--color-glass-border);
+    padding: 1rem 0 1rem 2rem;
+    /* Beri padding di kiri garis */
+    margin-left: 1rem;
+    /* Beri sedikit jarak dari tumpukan tech stack */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    /* Jarak antar item */
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Titik node pada timeline */
+.timeline-node {
+    position: absolute;
+    top: 5px;
+    left: -42px;
+    /* Posisi node tepat di atas garis (lebar padding + setengah lebar node) */
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    border: 2px solid var(--color-bg);
+    box-shadow: 0 0 10px var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-node {
+    transform: scale(1.3);
+    box-shadow: 0 0 15px var(--color-primary);
+}
+
+.timeline-content {
+    padding-left: 1rem;
+}
+
+.timeline-year {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.85rem;
+    color: var(--color-secondary-text);
+    margin-bottom: 0.25rem;
+}
+
+.timeline-title {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text);
+    /* Gunakan warna teks utama agar lebih terbaca */
+    text-shadow: none;
+    /* Hapus bayangan agar tidak terlalu ramai */
+    margin: 0;
+}
+
+.timeline-company {
+    font-size: 0.9rem;
+    color: var(--color-primary);
+}
+
+.timeline-description {
+    font-size: 0.8rem;
+    color: var(--color-secondary-text);
+    margin-top: 0.5rem;
+}
