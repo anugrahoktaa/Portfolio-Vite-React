@@ -1,0 +1,63 @@
+/* src/components/Certificates.css */
+
+.certificates-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 1 kolom */
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.certificate-item {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--color-text);
+    border-left: 4px solid transparent;
+    /* Garis di kiri untuk aksen hover */
+    transition: all 0.3s ease;
+}
+
+.certificate-item:hover {
+    transform: translateY(-5px);
+    /* Sedikit naik saat di-hover */
+    border-color: var(--color-primary);
+    /* Border kiri berubah warna */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cert-icon {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-right: 1.5rem;
+}
+
+.cert-details h3 {
+    font-size: 1.25rem;
+    color: var(--color-text);
+    /* Ganti warna judul agar lebih terbaca */
+    text-shadow: none;
+    /* Hapus bayangan agar bersih */
+    margin-bottom: 0.25rem;
+}
+
+.cert-details .cert-issuer {
+    font-size: 0.9rem;
+    color: var(--color-secondary-text);
+}
+
+@media screen and (max-width: 768px) {
+    .certificate-item {
+        padding: 1rem;
+    }
+
+    .cert-icon {
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    .cert-details h3 {
+        font-size: 1rem;
+    }
+}
