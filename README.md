@@ -1,12 +1,81 @@
-# React + Vite
+# Anugrah Okta's Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal portfolio website for Anugrah Okta, built with React and Vite. The portfolio showcases skills, projects, and professional experience with a modern, animated interface inspired by cyberpunk aesthetics.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **Intro Animation**: A cool loading animation that plays on the first visit.
+*   **Smooth Animations**: Utilizes `framer-motion` for smooth scrolling and component animations.
+*   **Component-Based Architecture**: Built with reusable React components for each section.
+*   **Sections**:
+    *   **Hero**: A welcoming section with a typing animation.
+    *   **About**: A brief introduction.
+    *   **Skills**: A list of technical skills.
+    *   **Projects**: A showcase of personal and professional projects.
+    *   **Certificates**: A display of earned certificates.
+    *   **Contact**: A form to get in touch.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*   **Frontend**: React, Vite
+*   **Styling**: CSS
+*   **Animations**: Framer Motion, React Type Animation
+*   **Icons**: React Icons
+
+## Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+You need to have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) (or [yarn](https://yarnpkg.com/)) installed on your machine.
+
+### Installation
+
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/your-username/project-portfolio.git
+    cd project-portfolio
+    ```
+
+2.  **Install NPM packages:**
+    ```sh
+    npm install
+    ```
+
+### Running the Application
+
+To run the application in development mode, use the following command. This will start a development server, usually on `http://localhost:5173`.
+
+```sh
+npm run dev
+```
+
+## Available Scripts
+
+In the project directory, you can run the following scripts:
+
+*   `npm run dev`: Runs the app in the development mode.
+*   `npm run build`: Builds the app for production to the `dist` folder.
+*   `npm run lint`: Lints the source code using ESLint.
+*   `npm run preview`: Serves the production build locally to preview it.
+
+## Project Structure
+
+```
+/
+├── public/              # Public assets
+├── src/
+│   ├── assets/          # Images and other assets
+│   ├── components/      # Reusable React components
+│   ├── contexts/        # React contexts (e.g., ThemeContext)
+│   ├── App.jsx          # Main application component
+│   └── main.jsx         # Entry point of the React application
+├── package.json         # Project metadata and dependencies
+└── vite.config.js       # Vite configuration
+```
+
+## Acknowledgements
+
+*   Designed & Built by Anugrah Okta.
+*   Cyberpunk-inspired aesthetics.
