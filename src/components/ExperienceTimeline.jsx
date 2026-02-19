@@ -30,7 +30,7 @@ const ExperienceTimeline = () => {
         <div className="timeline-container">
             {timelineData.map((item, index) => (
                 <div className="timeline-item" key={index}>
-                    <div className="timeline-node"></div>
+                    <div className="timeline-node left-sedikit"></div>
                     <div className="timeline-content">
                         <p className="timeline-year">{item.year}</p>
                         <h4 className="timeline-title">{item.title}</h4>
