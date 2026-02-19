@@ -24,8 +24,7 @@
 .timeline-node {
     position: absolute;
     top: 5px;
-    left: -42px;
-    /* Posisi node tepat di atas garis (lebar padding + setengah lebar node) */
+    /* left: -42px; */
     width: 12px;
     height: 12px;
     background-color: var(--color-primary);
@@ -34,15 +33,18 @@
     box-shadow: 0 0 10px var(--color-primary);
     transition: all 0.3s ease;
 }
+.left-sedikit {
+    left: -39px;
+}
 
 .timeline-item:hover .timeline-node {
     transform: scale(1.3);
     box-shadow: 0 0 15px var(--color-primary);
 }
 
-.timeline-content {
-    padding-left: 1rem;
-}
+/* .timeline-content {
+    padding-left: 1px;
+} */
 
 .timeline-year {
     font-family: 'Source Code Pro', monospace;
